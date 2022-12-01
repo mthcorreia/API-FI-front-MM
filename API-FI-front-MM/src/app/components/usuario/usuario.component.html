@@ -1,0 +1,18 @@
+<div class="container">    
+    <mat-form-field appearance="outline" class="full-width" col-50>
+      <mat-label>peca</mat-label>
+      <input matInput placeholder="preencha o nome do peca" [(ngModel)]="model.peca" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="full-width" col-50>
+        <mat-label>classificatoria</mat-label>
+        <input matInput placeholder="preencha o classificatoria da peca" [(ngModel)]="model.classificatoria" required>
+      </mat-form-field>  
+      <mat-form-field appearance="outline" class="full-width" col-50>
+        <mat-label>id</mat-label>
+        <input matInput placeholder="preencha o id da peca" [(ngModel)]="model.id" required>
+      </mat-form-field> 
+    <div class="toolbar___form">
+      <button mat-raised-button routerLink="/usuarios">Cancelar</button>
+      <button mat-raised-button color="primary" (click)="save()">Salvar</button>
+    </div>
+  </div>
